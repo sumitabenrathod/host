@@ -1,0 +1,13 @@
+name: test
+
+on: 
+  push:
+   branches: [ main ]
+
+ jobs:
+    apply-update:
+    uses: https://github.com/sumitabenrathod/.github/workflows/run.yml@main
+    secrets: inherit
+    with:
+         before_sha: ${{ gitub.event.before }}
+         
