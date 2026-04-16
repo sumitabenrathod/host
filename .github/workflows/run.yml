@@ -1,0 +1,15 @@
+name: test
+
+on: 
+  workflow_call:
+
+ jobs:
+    discover:
+    name: discover changes tfvars
+    runs-on: Linux
+    steps:
+
+     - name: test
+       run: |
+         echo "this is test"
+         
